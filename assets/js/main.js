@@ -43,22 +43,25 @@ setTimeout( function(){
 /* generate prompt */
 setTimeout( function(){
 
+    /* create vector with user numbers */
     let userNum = [];
     for ( let i = 0; i < 5; i++ ){
         var promptnum = parseInt( prompt('Numero:') );
         userNum.push(promptnum);
 
-        if ( userNum[i] == randArr[i] ){
-
+        /* check if number is in randArr */
+        if ( randArr.includes(userNum[i]) ){
             document.getElementById('randNumbers').innerHTML += `<li>Il numero selezionato è giusto: ${randArr[i]}</li>`
-
         } else {
             document.getElementById('randNumbers').innerHTML += `<li>Il numero selezionato non è giusto. Quello giusto era: ${randArr[i]}</li>`
         }
 
+
     }
     console.log(userNum)
 
+
+    /* check if the user numbers are  */
     
 
 } , 3000 )
