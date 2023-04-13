@@ -56,13 +56,8 @@ setTimeout( function(){
             document.getElementById('randNumbers').innerHTML += `<li>Il numero selezionato non è giusto. Quello giusto era: ${randArr[i]}</li>`
         }
 
-
     }
-    console.log(userNum)
-
-
-    /* check if the user numbers are  */
-    
+    console.log(userNum)    
 
 } , 3000 )
 
